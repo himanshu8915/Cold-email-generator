@@ -3,3 +3,6 @@ pandas==2.1.1
 python-dotenv==1.0.0
 fpdf2==2.7.5
 groq
+google-auth-oauthlib==1.0.0
+google-auth==2.16.0
+google-api-python-client==2.104.0
