@@ -34,7 +34,7 @@ def create_message(to_email: str, subject: str, html_content: str, pdf_bytes: by
     msg['subject'] = subject
     
     msg.attach(MIMEText(html_content, 'html'))
-    
+    #hi
     if pdf_bytes:
         pdf_attachment = MIMEApplication(pdf_bytes, _subtype="pdf")
         pdf_attachment.add_header(
