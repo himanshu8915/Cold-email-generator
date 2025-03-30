@@ -1,0 +1,42 @@
+cold-email-generator/
+├── app.py
+├── utils/
+│   ├── email_generator.py
+│   ├── pdf_generator.py
+│   └── email_sender.py
+├── .env
+├── requirements.txt
+└── sample_data/
+    ├── customers.csv
+    ├── itinerary_template.txt
+    └── hotel_logo.png
+
+
+
+
+workflow diagram 
+[User] 
+  │
+  ├─1. Uploads Files (CSV, TXT, JPG)
+  │
+  [Streamlit]
+  │
+  ├─2. Validates Files → Error if invalid
+  │
+  ├─3. Processes Data:
+  │   ├─ Reads customer emails
+  │   └─ Loads itinerary template
+  │
+  ├─4. Generates Emails:
+  │   ├─ Personalizes with names
+  │   └─ Embeds CTA link
+  │
+  ├─5. Authenticates Gmail API
+  │
+  ├─6. Sends Emails:
+  │   ├─ Attaches image
+  │   └─ Handles rate limits
+  │
+  └─7. Displays Results:
+      ├─ Success count
+      └─ Error logs
