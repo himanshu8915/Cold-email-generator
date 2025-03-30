@@ -1,7 +1,5 @@
 # Secret files
-credentials.json
-token.json
-.env
+
 
 # Python cache
 __pycache__/
